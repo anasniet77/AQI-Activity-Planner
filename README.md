@@ -61,5 +61,5 @@ git clone https://github.com/anasniet77/breathewise-aqi-activity-planner.git
 
 Open the project
 
-Live demo: https://anasniet77.github.io/AQI-Activity-Planner/https://anasniet77.github.io/AQI-Activity-Planner/
+Live demo: https://anasniet77.github.io/AQI-Activity-Planner/
 ---
