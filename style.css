@@ -1,0 +1,53 @@
+body {
+background-color: #f1f3f6;
+font-family: 'Inter', sans-serif;
+}
+
+.planner-card {
+border-radius: 1.5rem;
+border: none;
+background: white;
+}
+
+.aqi-circle {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+border: 8px solid #eee;
+transition: all 0.5s;
+}
+
+.aqi-num {
+font-size: 3rem;
+font-weight: 900;
+}
+
+.activity-item {
+border-radius: 12px;
+transition: transform 0.2s;
+border-left: 5px solid #ccc;
+}
+
+.activity-item:hover {
+transform: scale(1.02);
+}
+
+.safe {
+border-left-color: #198754;
+background-color: #e8f5e9;
+}
+
+.caution {
+border-left-color: #ffc107;
+background-color: #fff9c4;
+}
+
+.danger {
+border-left-color: #dc3545;
+background-color: #ffebee;
+opacity: 0.9;
+}
