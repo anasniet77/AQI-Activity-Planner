@@ -52,28 +52,14 @@ API
 
 ---
 
-## 📷 Screenshot
-
-(Add screenshot here)
-
----
 
 ## ⚡ Setup Instructions
 
 Clone repository
 
-git clone https://github.com/yourusername/breathewise-aqi-activity-planner.git
+git clone https://github.com/anasniet77/breathewise-aqi-activity-planner.git
 
 Open the project
 
-cd breathewise-aqi-activity-planner
-
-Run
-
-Open index.html in browser.
-
+Live demo: https://anasniet77.github.io/AQI-Activity-Planner/https://anasniet77.github.io/AQI-Activity-Planner/
 ---
-
-## 🔑 API Token
-
-Replace WAQI token in planner.js
