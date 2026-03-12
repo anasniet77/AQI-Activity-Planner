@@ -1,65 +1,118 @@
-# AQI-Activity-Planner
-# 🌿 BreatheWise - AQI Activity Planner
+# 🌿 BreatheWise – AQI Activity Planner
 
-BreatheWise is a web-based smart activity planner that uses real-time Air Quality Index (AQI) data to recommend safe outdoor activities.
+A smart web-based activity planner that uses **real-time Air Quality Index (AQI)** data to recommend safe outdoor activities.
 
-It helps users decide when it is safe to run, walk, cycle, or perform outdoor tasks.
+The application fetches live air quality data and analyzes whether activities like **running, walking, cycling, or shopping** are safe based on pollution levels.
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
 
-• Real-time AQI data using WAQI API  
-• Smart activity safety recommendations  
-• Dynamic AQI visualization  
-• City-based search  
-• Best time suggestion for outdoor activities  
-• Responsive UI using Bootstrap  
+🔗 **View the Website:**
+https://anasniet77.github.io/AQI-Activity-Planner/
+
+---
+
+## 📌 Features
+
+• Real-time AQI data using WAQI API
+• City-based air quality search
+• Smart outdoor activity recommendations
+• Dynamic AQI status indicator
+• Health advisory based on pollution levels
+• Responsive UI built with Bootstrap
+• Best time suggestion for outdoor activities
 
 ---
 
 ## 🧠 How It Works
 
-1. User enters a city
-2. The app calls the WAQI API
-3. AQI data is fetched
-4. Activities are evaluated based on AQI thresholds
-5. Safe / Caution / Risky activities are displayed
+1. User enters a city name
+2. The system fetches AQI data using the WAQI API
+3. AQI value is analyzed
+4. Activities are categorized as:
 
----
+* ✅ Safe
+* ⚠️ Caution
+* ❌ Risky
 
-## 🔗 API Used
-
-World Air Quality Index API
-
-https://aqicn.org/api/
+5. The system displays health advice and recommended activity times.
 
 ---
 
 ## 🛠 Tech Stack
 
-Frontend
-- HTML5
-- CSS3
-- Bootstrap
+### Frontend
 
-JavaScript
-- Fetch API
-- Async/Await
+* HTML5
+* CSS3
+* Bootstrap 5
 
-API
-- WAQI (Air Quality Index)
+### JavaScript
+
+* Fetch API
+* Async / Await
+
+### API
+
+* World Air Quality Index (WAQI)
 
 ---
 
+## 📂 Project Structure
 
-## ⚡ Setup Instructions
+```
+breathewise-aqi-planner
+│
+├── index.html
+│
+├── style.css
+│   
+│
+└── planner.js
+```
 
-Clone repository
-
-git clone https://github.com/anasniet77/breathewise-aqi-activity-planner.git
-
-Open the project
-
-Live demo: https://anasniet77.github.io/AQI-Activity-Planner/
 ---
+
+## 🔑 API Used
+
+Air quality data is provided by the **World Air Quality Index API**.
+
+You can obtain a free API token from:
+https://aqicn.org/api/
+
+---
+
+## 📊 Example Use Cases
+
+• Planning safe outdoor workouts
+• Monitoring pollution before going outside
+• Helping sensitive individuals avoid poor air quality
+• Educational projects related to environmental monitoring
+
+---
+
+## 📌 Future Improvements
+
+• AQI prediction using Machine Learning
+• Weather data integration
+• Auto location detection
+• Interactive AQI map visualization
+• Mobile app version
+
+---
+
+## 👨‍💻 Author
+
+**Anas Kareem**
+
+GitHub:
+https://github.com/anasniet77
+
+---
+
+## 🙏 Acknowledgements
+
+• WAQI API for air quality data
+• Bootstrap for responsive UI
+• GitHub Pages for free hosting
