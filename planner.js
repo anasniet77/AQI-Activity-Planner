@@ -45,13 +45,14 @@ document.getElementById('summaryAdvice').innerText = message;
 document.getElementById('updateTime').innerText = "--";
 document.getElementById('bestTime').innerText = "Best Time: --";
 
-document.getElementById('aqiCircle').style.borderColor = "#6c757d";
+document.getElementById('aqiCircle').style.borderColor = "#981412";
 document.getElementById('aqiValue').style.color = "#6c757d";
 document.getElementById('aqiLabel').style.color = "#6c757d";
 
 document.getElementById('activityList').innerHTML = "";
 
 }
+
 
 
 
@@ -125,7 +126,7 @@ renderActivities(aqi);
 
 function getAdvice(aqi){
 
-if(aqi <= 50)
+if(aqi <= 150)
 return "Air is perfect. Maximize your outdoor goals!";
 
 if(aqi <= 200)
@@ -173,40 +174,21 @@ statusText="CAUTION";
 return `
 
 <div class="col-md-6">
-<div class="activity-item p-4 m-2 shadow-sm ${statusClass}">
+    <div class="activity-item p-4 m-2 shadow-sm ${statusClass}">
 
-<div class="d-flex justify-content-between align-items-start">
+        <div class="d-flex justify-content-between align-items-start">
+            <h6 class="fw-bold mb-1">${act.name}</h6>
+            <span class="badge ${statusClass==='safe'?'bg-success':statusClass==='caution'?'bg-warning text-dark':'bg-danger'}">${statusText}
+            </span>
+        </div>
+        <div class="mt-2">
+            <span class="small text-muted">
+            Intensity: ${act.intensity}
+            </span>
+        </div>
 
-<h6 class="fw-bold mb-1">${act.name}</h6>
-
-<span class="badge ${
-statusClass==='safe'
-?'bg-success'
-:statusClass==='caution'
-?'bg-warning text-dark'
-:'bg-danger'}">
-
-${statusText}
-
-</span>
-
-</div>
-
-<div class="mt-2">
-
-<span class="small text-muted">
-Intensity: ${act.intensity}
-</span>
-
-</div>
-
-</div>
-</div>
-
-`;
-
-}).join('');
-
+    </div>
+</div>`;}).join('');
 }
 
 
