@@ -16,89 +16,59 @@
 <body>
 
 <div class="container py-4">
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-6 text-center">
+            <h1 class="fw-bold mb-3">AQI Activity <span class="text-success">Planner</span>
+            </h1>
 
-<div class="row justify-content-center mb-5">
-<div class="col-md-6 text-center">
+        <div class="input-group shadow-sm p-1 bg-white rounded-pill">
+            <input type="text"
+            id="cityInput" 
+            class="form-control border-0 px-4 rounded-pill" 
+            placeholder="Search City (e.g. Delhi)">
 
-<h1 class="fw-bold mb-3">
-BreatheWise <span class="text-primary">Planner</span>
-</h1>
-
-<div class="input-group shadow-sm p-1 bg-white rounded-pill">
-
-<input
-type="text"
-id="cityInput"
-class="form-control border-0 px-4 rounded-pill"
-placeholder="Search City (e.g. Delhi)"
->
-
-<button
-class="btn btn-primary rounded-pill px-4 fw-bold"
-onclick="updatePlanner()"
->
-Update Plan
-</button>
-
-</div>
-
-</div>
+            <button
+            class="btn btn-primary rounded-pill px-4 fw-bold"
+            onclick="updatePlanner()">Enter
+            </button>
+        </div>
+    </div>
 </div>
 
 
 <div class="row g-4">
+    <div class="col-lg-4">
+        <div class="card planner-card shadow-lg p-4 text-center h-100">
+            <h5 id="cityName" class="text-muted fw-bold">LOCATION</h5>
+                <div id="aqiCircle" class="aqi-circle my-4">
+                    <span id="aqiValue" class="aqi-num">--</span>
+                </div>
 
-<div class="col-lg-4">
+            <h3 id="aqiLabel" class="fw-bold">...</h3>
+                <div id="summaryAdvice" class="p-3 mt-3 rounded bg-light">
+                Search a city to see your health advisory.
+                </div>
+            <p class="mt-auto text-muted small" id="updateTime">--</p>
+        </div>
+    </div>
 
-<div class="card planner-card shadow-lg p-4 text-center h-100">
+        <div class="col-lg-8">
+            <div class="card planner-card shadow-lg p-4">
 
-<h5 id="cityName" class="text-muted fw-bold">LOCATION</h5>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="fw-bold m-0">Daily Activity Guide</h4>
+                    <span class="badge bg-primary px-3 py-2 rounded-pill" id="bestTime">
+                    Best Time: --
+                    </span>
+                </div>
 
-<div id="aqiCircle" class="aqi-circle my-4">
+                <div 
+                id="activityList" class="row g-3">
+                </div>
+            </div>
 
-<span id="aqiValue" class="aqi-num">--</span>
-
-</div>
-
-<h3 id="aqiLabel" class="fw-bold">...</h3>
-
-<div id="summaryAdvice" class="p-3 mt-3 rounded bg-light">
-
-Search a city to see your health advisory.
-
-</div>
-
-<p class="mt-auto text-muted small" id="updateTime">--</p>
-
-</div>
-</div>
-
-
-
-<div class="col-lg-8">
-
-<div class="card planner-card shadow-lg p-4">
-
-<div class="d-flex justify-content-between align-items-center mb-4">
-
-<h4 class="fw-bold m-0">Daily Activity Guide</h4>
-
-<span class="badge bg-primary px-3 py-2 rounded-pill" id="bestTime">
-
-Best Time: --
-
-</span>
-
-</div>
-
-<div id="activityList" class="row g-3"></div>
-
-</div>
-
-</div>
-
-</div>
-
+        </div>
+    </div>
 </div>
 
 <script src="planner.js"></script>
